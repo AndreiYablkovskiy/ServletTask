@@ -1,0 +1,39 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>homeServlet</servlet-name>
+    <servlet-class>servlet.HomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NecklaceServlet</servlet-name>
+    <servlet-class>servlet.NecklaceServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NecklaceDescription</servlet-name>
+    <jsp-file>/WEB-INF/jsp/necklaceDescription.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <servlet-name>sortJsp</servlet-name>
+    <jsp-file>/WEB-INF/jsp/sort.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>homeServlet</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NecklaceServlet</servlet-name>
+    <url-pattern>/necklace</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NecklaceDescription</servlet-name>
+    <url-pattern>/description</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sortJsp</servlet-name>
+    <url-pattern>/sort</url-pattern>
+  </servlet-mapping>
+</web-app>
