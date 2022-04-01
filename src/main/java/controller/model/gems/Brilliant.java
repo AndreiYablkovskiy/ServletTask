@@ -1,4 +1,4 @@
-package controller.gems;
+package controller.model.gems;
 
 public class Brilliant extends Gem {
 

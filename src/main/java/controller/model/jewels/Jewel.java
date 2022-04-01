@@ -1,6 +1,6 @@
-package controller.jewels;
+package controller.model.jewels;
 
-import controller.gems.Gem;
+import controller.model.gems.Gem;
 
 import java.util.List;
 

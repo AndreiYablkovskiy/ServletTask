@@ -1,5 +1,5 @@
 package controller.servlet;
-import controller.jewels.Necklace;
+import controller.model.jewels.Necklace;
 import controller.service.NecklaceService;
 
 import javax.servlet.ServletException;

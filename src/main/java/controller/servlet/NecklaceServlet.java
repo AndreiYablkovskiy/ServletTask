@@ -1,11 +1,11 @@
 package controller.servlet;
 
-import controller.gems.Brilliant;
-import controller.gems.Gem;
-import controller.gems.Ruby;
-import controller.gems.Topaz;
-import controller.jewels.Jewel;
-import controller.jewels.Necklace;
+import controller.model.gems.Brilliant;
+import controller.model.gems.Gem;
+import controller.model.gems.Ruby;
+import controller.model.gems.Topaz;
+import controller.model.jewels.Jewel;
+import controller.model.jewels.Necklace;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
