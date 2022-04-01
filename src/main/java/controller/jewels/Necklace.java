@@ -1,6 +1,7 @@
-package model.jewels;
+package controller.jewels;
 
-import model.gems.Gem;
+import controller.gems.Gem;
+
 import java.util.List;
 
 public class Necklace extends Jewel {
@@ -11,6 +12,6 @@ public class Necklace extends Jewel {
 
     @Override
     public String toString() {
-        return "model.jewels.Necklace{} " + super.toString();
+        return "Necklace{} " + super.toString();
     }
 }

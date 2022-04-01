@@ -1,6 +1,7 @@
-package model.jewels;
+package controller.jewels;
 
-import model.gems.Gem;
+import controller.gems.Gem;
+
 import java.util.List;
 
 public abstract class Jewel {
@@ -37,7 +38,7 @@ public abstract class Jewel {
 
     @Override
     public String toString() {
-        return "model.jewels{" +
+        return "controller.model.jewels{" +
                 "gemsList=" + gemList +
                 '}';
     }

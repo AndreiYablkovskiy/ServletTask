@@ -6,19 +6,19 @@
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
     <servlet-name>homeServlet</servlet-name>
-    <servlet-class>servlet.HomeServlet</servlet-class>
+    <servlet-class>controller.servlet.HomeServlet</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>NecklaceServlet</servlet-name>
-    <servlet-class>servlet.NecklaceServlet</servlet-class>
+    <servlet-class>controller.servlet.NecklaceServlet</servlet-class>
   </servlet>
   <servlet>
-    <servlet-name>NecklaceDescription</servlet-name>
-    <jsp-file>/WEB-INF/jsp/necklaceDescription.jsp</jsp-file>
+    <servlet-name>DescriptionServlet</servlet-name>
+    <servlet-class>controller.servlet.DescriptionServlet</servlet-class>
   </servlet>
   <servlet>
-    <servlet-name>sortJsp</servlet-name>
-    <jsp-file>/WEB-INF/jsp/sort.jsp</jsp-file>
+    <servlet-name>SortServlet</servlet-name>
+    <servlet-class>controller.servlet.SortServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>homeServlet</servlet-name>
@@ -29,11 +29,11 @@
     <url-pattern>/necklace</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>NecklaceDescription</servlet-name>
+    <servlet-name>DescriptionServlet</servlet-name>
     <url-pattern>/description</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>sortJsp</servlet-name>
+    <servlet-name>SortServlet</servlet-name>
     <url-pattern>/sort</url-pattern>
   </servlet-mapping>
 </web-app>

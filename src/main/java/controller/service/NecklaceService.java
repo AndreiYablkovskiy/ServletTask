@@ -1,7 +1,7 @@
-package service;
+package controller.service;
 
-import model.gems.Gem;
-import model.jewels.Jewel;
+import controller.gems.Gem;
+import controller.jewels.Jewel;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

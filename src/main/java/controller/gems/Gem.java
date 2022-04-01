@@ -1,15 +1,21 @@
-package model.gems;
+package controller.gems;
 
 public abstract class Gem {
+    private String stoneName;
     private double carat;
     private double clarity; // не наше точной инфы про прозрачность, ввожу рандомные значения
     private double priceForOneCarat; // цена за один карат, для подсчета стоимости, ввожу выдуманые значения
     private double gemPrice;
 
-    public Gem(double carat, double clarity, double priceForOneCarat) {
+    public Gem(String stoneName, double carat, double clarity, double priceForOneCarat) {
+        this.stoneName = stoneName;
         this.carat = carat;
         this.clarity = clarity;
         this.priceForOneCarat = priceForOneCarat;
+    }
+
+    public String getStoneName() {
+        return stoneName;
     }
 
     public double getCarat() {
@@ -42,11 +48,10 @@ public abstract class Gem {
 
     @Override
     public String toString() {
-        return "model.gems{" +
-                "carat=" + carat +
+        return "Stone name='" + stoneName + '\'' +
+                ", carat=" + carat +
                 ", clarity=" + clarity +
                 ", priceForOneCarat=" + priceForOneCarat +
-                ", gemPrice=" + gemPrice +
-                '}';
+                ", gemPrice=" + gemPrice;
     }
 }

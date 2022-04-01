@@ -1,12 +1,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="model.jewels.Necklace" %>
+<%@ page isELIgnored="false" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
     <body>
         <h1>The necklace consists of: </h1>
-        <% Necklace necklace = (Necklace) session.getAttribute("createdNecklace"); %>
-        <p><%= necklace %></p>
-        <p>The necklace carat value is <%= necklace.getJewelCaratValue() %></p>
-        <p>The necklace price is <%= necklace.getJewelPrice() %></p>
-        <a href="http://localhost:8080/sort">Sort gems from low to high gems price</a>
+        <c:forEach var="gem" items="${createdNecklace.gemList}">
+            <p> ${gem} </p>
+        </c:forEach>
+        <p><h3> The necklace carat value is ${createdNecklace.jewelCaratValue} </h3></p>
+        <p><h3> The necklace price is ${createdNecklace.jewelPrice} </h3></p>
+        <a href="/sort"><b> >>>Sort gems from low to high gems price <<< </b></a>
     </body>
 </html>
